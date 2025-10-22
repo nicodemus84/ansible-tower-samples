@@ -1,7 +1,6 @@
 - name: Hello World Sample
   hosts: all
   tasks:
-    - name: Hello Message
+    - name: Hello Message with name from AAP Survey question
       debug:
-        msg: "Hello World!"
-
+        msg: "Hello {{ name }}!"
